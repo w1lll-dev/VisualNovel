@@ -1,8 +1,7 @@
 #include "dialogue.hpp"
-#include <_types/_uint16_t.h>
-#include <cstdio>
+#include <fstream>
 #include <raylib.h>
-#include <string>
+#include <iostream>
 
 DialogueManager::DialogueManager() {
     // Background
@@ -60,6 +59,8 @@ void DialogueManager::DrawBg() {
 }
 
 void DialogueManager::DrawCharacter() {
+    if (!dia["1"][curDiaIdx].contains("Character")) return;
+
     // Update current character and expression
     curChar = dia["1"][curDiaIdx]["Character"].get<std::string>();
     curExpr = dia["1"][curDiaIdx]["Expression"].get<std::string>();
@@ -109,8 +110,10 @@ void DialogueManager::DrawDialogue() {
     DrawRectangle(boxX, diaBoxY, diaBoxWidth, diaBoxHeight, boxCol);
     DrawTextEx(font, TextSubtext(curDia.c_str(), 0, framesCounter/2), diaTextPos, fontSize, spacing, WHITE);
 
-    DrawRectangle(boxX, nameBoxY, nameBoxWidth, nameBoxHeight, boxCol);
-    DrawTextEx(font, curChar.c_str(), charTextPos, fontSize, spacing, WHITE);
+    if (dia["1"][curDiaIdx].contains("Character")) {
+        DrawRectangle(boxX, nameBoxY, nameBoxWidth, nameBoxHeight, boxCol);
+        DrawTextEx(font, curChar.c_str(), charTextPos, fontSize, spacing, WHITE);
+    }
 
     // Options
     if (dia["1"][curDiaIdx].contains("Options")) {
@@ -120,18 +123,25 @@ void DialogueManager::DrawDialogue() {
             uint16_t startX = (GetScreenWidth() - optionBtnsWidth) / 2;
 
             // Get the center of the corresponding divided screen
-            optionBoxX = startX + (dividedScreen / 2) + (i * dividedScreen) - (optionBtnWidth / 2);
-            optionBoxY = GetScreenHeight() - (diaBoxHeight + nameBoxHeight + optionBtnHeight + optionBorderSize);
+            optionBtnX = startX + (dividedScreen / 2) + (i * dividedScreen) - (optionBtnWidth / 2);
+            optionBtnY = GetScreenHeight() - (diaBoxHeight + nameBoxHeight + optionBtnHeight + optionBorderSize);
             
             // Option name
             std::string nameOfOption = dia["1"][curDiaIdx]["Options"][i]["Name"].get<std::string>().c_str();
 
             // Center option text
             Vector2 textSize = MeasureTextEx(font, nameOfOption.c_str(), optionFontSize, spacing);
-            Vector2 textPos = {optionBoxX + optionBtnWidth / 2.0f - textSize.x / 2.0f, optionBoxY + optionBtnHeight / 2.0f - textSize.y / 2.0f};
+            Vector2 textPos = {optionBtnX + optionBtnWidth / 2.0f - textSize.x / 2.0f, optionBtnY + optionBtnHeight / 2.0f - textSize.y / 2.0f};
+
+            // Button
+            Rectangle btn = {static_cast<float>(optionBtnX), static_cast<float>(optionBtnY), static_cast<float>(optionBtnWidth), static_cast<float>(optionBtnHeight)};
+
+            if (CheckCollisionPointRec(GetMousePosition(), btn) && IsMouseButtonDown(MOUSE_BUTTON_LEFT)) {
+                std::cout << "Button: " << i << " pressed!\n";
+            }
 
             // Draw
-            DrawRectangle(optionBoxX, optionBoxY, optionBtnWidth, optionBtnHeight, boxCol);
+            DrawRectangle(btn.x, btn.y, btn.width, btn.height, boxCol);
             DrawTextEx(font, nameOfOption.c_str(), textPos, optionFontSize, spacing, WHITE);
         }
     }
@@ -140,7 +150,7 @@ void DialogueManager::DrawDialogue() {
 void DialogueManager::ManageDialogue() {
     framesCounter += IsKeyDown(KEY_SPACE) ? 8 : 1;
 
-    if (IsKeyPressed(KEY_ENTER) && framesCounter > curDia.length() && curDiaIdx < dia["1"].size() - 1)  {
+    if (IsKeyPressed(KEY_ENTER) && framesCounter > curDia.length() && curDiaIdx < dia["1"].size() - 1 && !dia["1"][curDiaIdx].contains("Options"))  {
         framesCounter = 0; 
         curDiaIdx++;
     }

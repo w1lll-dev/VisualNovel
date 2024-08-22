@@ -1,9 +1,8 @@
 #ifndef DIALOGUE_HPP
 #define DIALOGUE_HPP
 
-#include "raylib.h"
-#include <_types/_uint8_t.h>
-#include <fstream>
+#include <cstdint>
+#include <raylib.h>
 #include <nlohmann/json.hpp>
 
 class DialogueManager {
@@ -33,8 +32,8 @@ private:
     uint16_t boxX;
     uint16_t diaBoxY;
     uint16_t nameBoxY;
-    uint16_t optionBoxX;
-    uint16_t optionBoxY;
+    uint16_t optionBtnX;
+    uint16_t optionBtnY;
 
     std::string curBg;
     std::string curChar;
@@ -84,6 +83,7 @@ public:
     void ManageDialogue();
 
     uint16_t curDiaIdx = 0;
+    uint16_t curSeqIdx = 0;
 };
 
 #endif

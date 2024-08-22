@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/william/Documents/Visual Novels/Rizz Simulator/src/dialogue.cpp" "CMakeFiles/RizzSimulator.dir/src/dialogue.cpp.o" "gcc" "CMakeFiles/RizzSimulator.dir/src/dialogue.cpp.o.d"
-  "/Users/william/Documents/Visual Novels/Rizz Simulator/src/main.cpp" "CMakeFiles/RizzSimulator.dir/src/main.cpp.o" "gcc" "CMakeFiles/RizzSimulator.dir/src/main.cpp.o.d"
+  "/home/will/RaylibGames/VisualNovel/src/dialogue.cpp" "CMakeFiles/RizzSimulator.dir/src/dialogue.cpp.o" "gcc" "CMakeFiles/RizzSimulator.dir/src/dialogue.cpp.o.d"
+  "/home/will/RaylibGames/VisualNovel/src/main.cpp" "CMakeFiles/RizzSimulator.dir/src/main.cpp.o" "gcc" "CMakeFiles/RizzSimulator.dir/src/main.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

@@ -1,5 +1,3 @@
-/Users/william/Documents/Visual Novels/Rizz Simulator/CMakeFiles/RizzSimulator.dir
-/Users/william/Documents/Visual Novels/Rizz Simulator/CMakeFiles/package.dir
-/Users/william/Documents/Visual Novels/Rizz Simulator/CMakeFiles/package_source.dir
-/Users/william/Documents/Visual Novels/Rizz Simulator/CMakeFiles/edit_cache.dir
-/Users/william/Documents/Visual Novels/Rizz Simulator/CMakeFiles/rebuild_cache.dir
+/home/will/RaylibGames/VisualNovel/CMakeFiles/RizzSimulator.dir
+/home/will/RaylibGames/VisualNovel/CMakeFiles/edit_cache.dir
+/home/will/RaylibGames/VisualNovel/CMakeFiles/rebuild_cache.dir

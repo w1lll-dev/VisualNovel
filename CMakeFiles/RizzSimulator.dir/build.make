@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /opt/homebrew/Cellar/cmake/3.30.0/bin/cmake
+CMAKE_COMMAND = /usr/bin/cmake
 
 # The command to remove a file.
-RM = /opt/homebrew/Cellar/cmake/3.30.0/bin/cmake -E rm -f
+RM = /usr/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/Users/william/Documents/Visual Novels/Rizz Simulator"
+CMAKE_SOURCE_DIR = /home/will/RaylibGames/VisualNovel
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/Users/william/Documents/Visual Novels/Rizz Simulator"
+CMAKE_BINARY_DIR = /home/will/RaylibGames/VisualNovel
 
 # Include any dependencies generated for this target.
 include CMakeFiles/RizzSimulator.dir/depend.make
@@ -72,30 +72,30 @@ include CMakeFiles/RizzSimulator.dir/flags.make
 CMakeFiles/RizzSimulator.dir/src/dialogue.cpp.o: CMakeFiles/RizzSimulator.dir/flags.make
 CMakeFiles/RizzSimulator.dir/src/dialogue.cpp.o: src/dialogue.cpp
 CMakeFiles/RizzSimulator.dir/src/dialogue.cpp.o: CMakeFiles/RizzSimulator.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/william/Documents/Visual Novels/Rizz Simulator/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/RizzSimulator.dir/src/dialogue.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RizzSimulator.dir/src/dialogue.cpp.o -MF CMakeFiles/RizzSimulator.dir/src/dialogue.cpp.o.d -o CMakeFiles/RizzSimulator.dir/src/dialogue.cpp.o -c "/Users/william/Documents/Visual Novels/Rizz Simulator/src/dialogue.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/will/RaylibGames/VisualNovel/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/RizzSimulator.dir/src/dialogue.cpp.o"
+	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RizzSimulator.dir/src/dialogue.cpp.o -MF CMakeFiles/RizzSimulator.dir/src/dialogue.cpp.o.d -o CMakeFiles/RizzSimulator.dir/src/dialogue.cpp.o -c /home/will/RaylibGames/VisualNovel/src/dialogue.cpp
 
 CMakeFiles/RizzSimulator.dir/src/dialogue.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/RizzSimulator.dir/src/dialogue.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/william/Documents/Visual Novels/Rizz Simulator/src/dialogue.cpp" > CMakeFiles/RizzSimulator.dir/src/dialogue.cpp.i
+	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/will/RaylibGames/VisualNovel/src/dialogue.cpp > CMakeFiles/RizzSimulator.dir/src/dialogue.cpp.i
 
 CMakeFiles/RizzSimulator.dir/src/dialogue.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RizzSimulator.dir/src/dialogue.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/william/Documents/Visual Novels/Rizz Simulator/src/dialogue.cpp" -o CMakeFiles/RizzSimulator.dir/src/dialogue.cpp.s
+	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/will/RaylibGames/VisualNovel/src/dialogue.cpp -o CMakeFiles/RizzSimulator.dir/src/dialogue.cpp.s
 
 CMakeFiles/RizzSimulator.dir/src/main.cpp.o: CMakeFiles/RizzSimulator.dir/flags.make
 CMakeFiles/RizzSimulator.dir/src/main.cpp.o: src/main.cpp
 CMakeFiles/RizzSimulator.dir/src/main.cpp.o: CMakeFiles/RizzSimulator.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/william/Documents/Visual Novels/Rizz Simulator/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/RizzSimulator.dir/src/main.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RizzSimulator.dir/src/main.cpp.o -MF CMakeFiles/RizzSimulator.dir/src/main.cpp.o.d -o CMakeFiles/RizzSimulator.dir/src/main.cpp.o -c "/Users/william/Documents/Visual Novels/Rizz Simulator/src/main.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/will/RaylibGames/VisualNovel/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/RizzSimulator.dir/src/main.cpp.o"
+	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RizzSimulator.dir/src/main.cpp.o -MF CMakeFiles/RizzSimulator.dir/src/main.cpp.o.d -o CMakeFiles/RizzSimulator.dir/src/main.cpp.o -c /home/will/RaylibGames/VisualNovel/src/main.cpp
 
 CMakeFiles/RizzSimulator.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/RizzSimulator.dir/src/main.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/william/Documents/Visual Novels/Rizz Simulator/src/main.cpp" > CMakeFiles/RizzSimulator.dir/src/main.cpp.i
+	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/will/RaylibGames/VisualNovel/src/main.cpp > CMakeFiles/RizzSimulator.dir/src/main.cpp.i
 
 CMakeFiles/RizzSimulator.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RizzSimulator.dir/src/main.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/william/Documents/Visual Novels/Rizz Simulator/src/main.cpp" -o CMakeFiles/RizzSimulator.dir/src/main.cpp.s
+	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/will/RaylibGames/VisualNovel/src/main.cpp -o CMakeFiles/RizzSimulator.dir/src/main.cpp.s
 
 # Object files for target RizzSimulator
 RizzSimulator_OBJECTS = \
@@ -108,9 +108,9 @@ RizzSimulator_EXTERNAL_OBJECTS =
 bin/RizzSimulator: CMakeFiles/RizzSimulator.dir/src/dialogue.cpp.o
 bin/RizzSimulator: CMakeFiles/RizzSimulator.dir/src/main.cpp.o
 bin/RizzSimulator: CMakeFiles/RizzSimulator.dir/build.make
-bin/RizzSimulator: /opt/homebrew/lib/libraylib.dylib
+bin/RizzSimulator: /usr/lib/libraylib.so
 bin/RizzSimulator: CMakeFiles/RizzSimulator.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/Users/william/Documents/Visual Novels/Rizz Simulator/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable bin/RizzSimulator"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/will/RaylibGames/VisualNovel/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable bin/RizzSimulator"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/RizzSimulator.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -122,6 +122,6 @@ CMakeFiles/RizzSimulator.dir/clean:
 .PHONY : CMakeFiles/RizzSimulator.dir/clean
 
 CMakeFiles/RizzSimulator.dir/depend:
-	cd "/Users/william/Documents/Visual Novels/Rizz Simulator" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/Users/william/Documents/Visual Novels/Rizz Simulator" "/Users/william/Documents/Visual Novels/Rizz Simulator" "/Users/william/Documents/Visual Novels/Rizz Simulator" "/Users/william/Documents/Visual Novels/Rizz Simulator" "/Users/william/Documents/Visual Novels/Rizz Simulator/CMakeFiles/RizzSimulator.dir/DependInfo.cmake" "--color=$(COLOR)"
+	cd /home/will/RaylibGames/VisualNovel && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/will/RaylibGames/VisualNovel /home/will/RaylibGames/VisualNovel /home/will/RaylibGames/VisualNovel /home/will/RaylibGames/VisualNovel /home/will/RaylibGames/VisualNovel/CMakeFiles/RizzSimulator.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/RizzSimulator.dir/depend
 
