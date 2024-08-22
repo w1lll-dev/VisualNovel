@@ -1,0 +1,48 @@
+{
+    "1": [
+        {
+            "Background": "Classroom",
+            "Character": "Carmilla",
+            "Expression": "Neutral",
+            "Dialogue": ""
+        },
+        {
+            "Character": "Carmilla",
+            "Expression": "Happy",
+            "Dialogue": "Hey... What're you lookin' at?"
+        },
+        {
+            "Character": "Carmilla",
+            "Expression": "Happy",
+            "Dialogue": "....."
+        },
+        {
+            "Character": "Carmilla",
+            "Expression": "Annoyed",
+            "Dialogue": "Are you gonna answer me?"
+        },
+        {
+            "Character": "Carmilla",
+            "Expression": "Angry",
+            "Dialogue": "Hey! SAY SOMETHING!!!"
+        },
+        {
+            "Character": "Carmilla",
+            "Expression": "Furious",
+            "Dialogue": "ANSWER ME!!!!!!!!!!!!!!!!!!!"
+        },
+        {
+            "Character": "Carmilla",
+            "Expression": "Neutral",
+            "Dialogue": "Are you insane?",
+            "Options": [
+                {
+                    "Name": "Yes"
+                },
+                {
+                    "Name": "No"
+                }
+            ]
+        }
+    ]
+}

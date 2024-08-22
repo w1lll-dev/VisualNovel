@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/Users/william/Documents/Visual Novels/Rizz Simulator",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.1 -o CMakeFiles/RizzSimulator.dir/src/dialogue.cpp.o -c \"/Users/william/Documents/Visual Novels/Rizz Simulator/src/dialogue.cpp\"",
+  "file": "/Users/william/Documents/Visual Novels/Rizz Simulator/src/dialogue.cpp",
+  "output": "CMakeFiles/RizzSimulator.dir/src/dialogue.cpp.o"
+},
+{
+  "directory": "/Users/william/Documents/Visual Novels/Rizz Simulator",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -isystem /opt/homebrew/include -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.1 -o CMakeFiles/RizzSimulator.dir/src/main.cpp.o -c \"/Users/william/Documents/Visual Novels/Rizz Simulator/src/main.cpp\"",
+  "file": "/Users/william/Documents/Visual Novels/Rizz Simulator/src/main.cpp",
+  "output": "CMakeFiles/RizzSimulator.dir/src/main.cpp.o"
+}
+]
