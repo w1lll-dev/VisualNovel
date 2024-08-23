@@ -1,1 +1,0 @@
-/sbin/c++ CMakeFiles/RizzSimulator.dir/src/dialogue.cpp.o CMakeFiles/RizzSimulator.dir/src/main.cpp.o -o bin/RizzSimulator  /usr/lib/libraylib.so -L/usr/lib -lraylib
