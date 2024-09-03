@@ -1,48 +1,586 @@
 {
-    "1": [
+    "Intro": [
         {
-            "Background": "Classroom",
-            "Character": "Carmilla",
-            "Expression": "Neutral",
-            "Dialogue": ""
+            "Background": "Lolake",
+            "Dialogue": "Welcome to the magic city of Lolake, a city of wonder and magic and where the magnificent Lake of LoLake resides."
         },
         {
-            "Character": "Carmilla",
+            "Dialogue": "And today is your first day at Veneficus school of ancient magic, where all kinds of folk come to learn and study."
+        },
+        {
+            "Dialogue": "But before you can step foot inside Veneficus you must tell us your name."
+        },
+        {
+            "Dialogue": "Enter your name: [Input]"
+        },
+        {
+            "Background": "Hall",
+            "Dialogue": "Great! Now one of our tutors will now show you to your room."
+        },
+        {
+            "Font": "Italics",
+            "Dialogue": "A young blonde elf comes into view."
+        },
+        {
+            "Character": "Ivory",
             "Expression": "Happy",
-            "Dialogue": "Hey... What're you lookin' at?"
+            "Dialogue": "Ah you must be [Name], Im Ivory I'll follow you to your room."
         },
         {
-            "Character": "Carmilla",
+            "Character": "Ivory",
+            "Expression": "EyesClosed",
+            "Font": "Italics",
+            "Dialogue": "As you and Ivory begin your walk arond the school to your room, you just cant stop looking at her, her eyes, her smiling face."
+        },
+        {
+            "Character": "Ivory",
+            "Expression": "EyesClosed",
+            "Font": "Italics",
+            "Dialogue": "You think to yourself... this is probably what being in love feels like."
+        },
+        {
+            "Character": "Ivory",
+            "Expression": "EyesClosed",
+            "Font": "Italics",
+            "Dialogue": "Then the feeling fades away just as you hear her say..."
+        },
+        {
+            "Background": "Dorm",
+            "Character": "Ivory",
             "Expression": "Happy",
-            "Dialogue": "....."
+            "Dialogue": "Well this is your room, you are pretty lucky. Normally you are supposed to live with a roommate, but he changed his mind and started at another school."
         },
         {
-            "Character": "Carmilla",
-            "Expression": "Annoyed",
-            "Dialogue": "Are you gonna answer me?"
+            "Character": "Ivory",
+            "Expression": "Happy",
+            "Dialogue": "Well I'll leave your to it. You can find me in the main hall if you have any questions."
         },
         {
-            "Character": "Carmilla",
-            "Expression": "Angry",
-            "Dialogue": "Hey! SAY SOMETHING!!!"
+            "Font": "Italics",
+            "Dialogue": "Wow, your very own room. Well this is cozy, just imagine all the things you can do here. There's even a little table for studying."
         },
         {
-            "Character": "Carmilla",
-            "Expression": "Furious",
-            "Dialogue": "ANSWER ME!!!!!!!!!!!!!!!!!!!"
-        },
-        {
-            "Character": "Carmilla",
-            "Expression": "Neutral",
-            "Dialogue": "Are you insane?",
+            "Font": "Italics",
+            "Dialogue": "You should probably unpack all of your belongings, so you actually have a place to sleep, and don't have to do it later. Or you could go and see that elf girl again in the main hall",
             "Options": [
                 {
-                    "Name": "Yes"
+                    "Name": "Go to main hall"
                 },
                 {
-                    "Name": "No"
+                    "Name": "Unpack your belongings"
                 }
             ]
+        }
+    ],
+    "Go to main hall": [
+        {
+            "Background": "Hall",
+            "Font": "Italics",
+            "Dialogue": "You decide to go to the main hall to ask Ivory some questions about the school."
+        },
+        {
+            "Font": "Italics",
+            "Dialogue": "You see a blond girl in the distance, talking to a small group of people."
+        },
+        {
+            "Font": "Italics",
+            "Dialogue": "Two other girls and a boy. A green half orc and a purple.. vampire? The guy is just not interesting for you."
+        },
+        {
+            "Font": "Italics",
+            "Dialogue": "You slowly aproach them, but you don't walk far before Ivory waves you over."
+        },
+        {
+            "Character": "Ivory",
+            "Expression": "EyesClosed",
+            "Dialogue": "Hey [Name]! Come join us. We were just gonna to talk about who we would wanna be lab partners with."
+        },
+        {
+            "Character": "Kaya",
+            "Expression": "Angry",
+            "Dialogue": "I just hope I don't end up with fucking AMY!... Can't take that girl. Always tryna impress everyone by THINKING shes smarter. She's so not."
+        },
+        {
+            "Character": "Ivory",
+            "Expression": "Surprised",
+            "Dialogue": "Uhmmm... Kaya.. New boy is here you know, haha.. Whyy, don't you introduce yourself?"
+        },
+        {
+            "Character": "Ivory",
+            "Expression": "Surprised",
+            "Font": "Italics",
+            "Dialogue": "You notice that Ivory is blushing and looking quite embarrased."
+        },
+        {
+            "Character": "Kaya",
+            "Expression": "Neutral",
+            "Dialogue": "Right! I'm sorry new guy. My name is Kaya, and I'm the strongest AND the coolest here on campus. If you need anything, or just a good massage, you can count on me."
+        },
+        {
+            "Character": "Kaya",
+            "Expression": "EyesClosed",
+            "Font": "Italics",
+            "Dialogue": "Kaya winks at you. Was she flirting with you just now? Not that you mind."
+        },
+        {
+            "Character": "Ivory",
+            "Expression": "Disappointed",
+            "Dialogue": "Kaya.. Gosh.."
+        },
+        {
+            "Character": "Ivory",
+            "Expression": "Disappointed",
+            "Font": "Italics",
+            "Dialogue": "Ivory looks even more embarrased now."
+        },
+        {
+            "Character": "Carmilla",
+            "Expression": "EyesClosed",
+            "Dialogue": "Anyway. I guess it's my turn now.. Hi, I'm Carmilla. I.. I run the.. Umm.. love club.."
+        },
+        {
+            "Character": "Carmilla",
+            "Expression": "EyesClosed",
+            "Font": "Italics",
+            "Dialogue": "Carmilla is looking very tense at the moment."
+        },
+        {
+            "Character": "Carmilla",
+            "Expression": "EyesClosed",
+            "Talking": "Player",
+            "Dialogue": "That sounds really cool!"
+        },
+        {
+            "Character": "Carmilla",
+            "Expression": "Neutral",
+            "Font": "Italics",
+            "Dialogue": "You try to show Carmilla that it isn't embarrassing. You wanna support her in her club."
+        },
+        {
+            "Character": "Carmilla",
+            "Expression": "Happy",
+            "Dialogue": "REALLY?! then you might wanna join? We are only three people right now, so it would be really nice to have a fourth."
+        },
+        {
+            "Character": "Carmilla",
+            "Expression": "Neutral",
+            "Talking": "Player",
+            "Dialogue": "No. Sorry I have other plans.. And I'm not sure I'm even ready to be in a club yet."
+        },
+        {
+            "Character": "Carmilla",
+            "Expression": "Neutral",
+            "Font": "Italics",
+            "Dialogue": "You really don't wanna be a part of a LOVE club. Even though Carmilla is extremely cute, it's just not an activity for you."
+        },
+        {
+            "Character": "Carmilla",
+            "Expression": "Sad",
+            "Dialogue": "Aww.. that's too bad. What if you just join for one day? And then we could spend the evening together after? Pleasseee?? Pretty please?.."
+        },
+        {
+            "Character": "Carmilla",
+            "Expression": "Sad",
+            "Font": "Italics",
+            "Dialogue": "Carmilla is all up in your face begging you.",
+            "Options": [
+                {
+                    "Name": "Join the love club"
+                },
+                {
+                    "Name": "Go to your room and study"
+                }
+            ]
+        }
+    ],
+    "Join the love club": [
+        {
+            "Character": "Carmilla",
+            "Expression": "Neutral",
+            "Talking": "Player",
+            "Dialogue": "Sure, one day won't hurt I guess."
+        },
+        {
+            "Character": "Carmilla",
+            "Expression": "Neutral",
+            "Font": "Italics",
+            "Dialogue": "And you also get to know Carmilla better."
+        },
+        {
+            "Character": "Ivory",
+            "Expression": "Sad",
+            "Font": "Italics",
+            "Dialogue": "Ivory looks hurt."
+        },
+        {
+            "Character": "Ivory",
+            "Expression": "Sad",
+            "Dialogue": "That's great! Now you can really get to know each other... ahha."
+        },
+        {
+            "Character": "Carmilla",
+            "Expression": "Happy",
+            "Dialogue": "Alright! I'll see you tomorrow then."
+        },
+        {
+            "Character": "Carmilla",
+            "Expression": "Happy",
+            "Font": "Italics",
+            "Dialogue": "She gives you a small smile before leaving."
+        },
+        {
+            "Background": "Dorm",
+            "Font": "Italics",
+            "Dialogue": "You wake up the next day with an exciting feeling in your stomache. Today you're going to hang out with Carmilla."
+        },
+        {
+            "Font": "Italics",
+            "Dialogue": "*Knock knock...*"
+        },
+        {
+            "Font": "Italics",
+            "Dialogue": "You hear a knock on the door?.. You get up from your bed to go open the door."
+        },
+        {
+            "Font": "Italics",
+            "Dialogue": "But.. what? No one is behind the door?..."
+        },
+        {
+            "Font": "Italics",
+            "Dialogue": "Must have been a prank or something.. Weird."
+        },
+        {
+            "Font": "Italics",
+            "Dialogue": "You walk out the door to go to class."
+        },
+        {
+            "Background": "Chemistry",
+            "Font": "Italics",
+            "Dialogue": "You arrive at the class and see all three girls. Ivory, Carmilla and Kaya. It makes you more comfortable when they are around."
+        },
+        {
+            "Character": "Carmilla",
+            "Expression": "Happy",
+            "Dialogue": "Hey [Name], why dont you join me? We'll make the best chemistry patners."
+        },
+        {
+            "Character": "Carmilla",
+            "Expression": "Happy",
+            "Talking": "Player",
+            "Dialogue": "Carmilla, hi!"
+        },
+        {
+            "Character": "Carmilla",
+            "Expression": "Happy",
+            "Font": "Italics",
+            "Dialogue": "You walk over to the table Carmilla is sitting at. You notice both Kaya and Ivory stare at you while you pass by them."
+        },
+        {
+            "Character": "Carmilla",
+            "Expression": "Happy",
+            "Font": "Italics",
+            "Dialogue": "Time passes, and you have actually enjoyed spending time with Carmilla, even though it's in school."
+        },
+        {
+            "Character": "Carmilla",
+            "Expression": "Neutral",
+            "Font": "Italics",
+            "Dialogue": "RIIINg RinG"
+        },
+        {
+            "Character": "Carmilla",
+            "Expression": "Happy",
+            "Dialogue": "Oop- sounds like we're done for today. You still up for our hangout?"
+        },
+        {
+            "Character": "Carmilla",
+            "Expression": "Happy",
+            "Talking": "Player",
+            "Dialogue": "Yes. Can't wait."
+        },
+        {
+            "Font": "Italics",
+            "Dialogue": "You both pack all of your stuff and leave the classroom."
+        },
+        {
+            "Background": "Hall2",
+            "Font": "Italics",
+            "Dialogue": "You follow Carmilla to her club room. On the way you pass elves, gnomes and orcs. You notice that there aren't that many vampires like Carmilla."
+        },
+        {
+            "Background": "LongHall",
+            "Font": "Italics",
+            "Dialogue": "You take a turn and enter a loong darn hallway. At the end of the hallway, there is a big door. But it feels like the hallway is hours long."
+        },
+        {
+            "Font": "Italics",
+            "Dialogue": "Something feels off...But you can't tell what it is. You thought you felt safe with Carmilla, but now she feels a bit off.."
+        },
+        {
+            "Background": "LoveClub",
+            "Character": "Carmilla",
+            "Expression": "Happy",
+            "Dialogue": "Here we are."
+        },
+        {
+            "Character": "Carmilla",
+            "Expression": "Happy",
+            "Font": "Italics",
+            "Dialogue": "Carmilla steps inside and greets the others that are in there"
+        },
+        {
+            "Character": "Carmilla",
+            "Expression": "Happy",
+            "Dialogue": "Come on, they don't bite... That much at least."
+        },
+        {
+            "Character": "Carmilla",
+            "Expression": "Happy",
+            "Font": "Italics",
+            "Dialogue": "You step inside a big room. It's dark, but has little lights all around its walls."
+        },
+        {
+            "Character": "Carmilla",
+            "Expression": "Happy",
+            "Dialogue": "This is Caramil and Camil."
+        },
+        {
+            "Character": "Carmilla",
+            "Expression": "Happy",
+            "Font": "Italics",
+            "Dialogue": "You see two pale vampires, they look weirdly a lot like Carmilla. And they almost have the same names.."
+        },
+        {
+            "Character": "Carmilla",
+            "Expression": "EyesClosed",
+            "Dialogue": "There aren't that many vampires here, so we gotta stick together you know."
+        },
+        {
+            "Character": "Carmilla",
+            "Expression": "EyesClosed",
+            "Dialogue": "Thats.. actually why.. uhm.. I brought you here."
+        },
+        {
+            "Character": "Carmilla",
+            "Expression": "EyesClosed",
+            "Dialogue": "We wanna create a much bigger vampire community. But we don't have any male vampires.."
+        },
+        {
+            "Character": "Carmilla",
+            "Expression": "Happy",
+            "Font": "Italics",
+            "Dialogue": "You feel frightened! What have you gotten yourself into?"
+        },
+        {
+            "Character": "Carmilla",
+            "Expression": "Happy",
+            "Font": "Italics",
+            "Dialogue": "On the other hand, Carmilla is kinda hot. So would it be so bad not to run the hell away?"
+        },
+        {
+            "Character": "Carmilla",
+            "Expression": "Happy",
+            "Font": "Italics",
+            "Dialogue": "The voice telling you to run is getting smaller and smaller"
+        },
+        {
+            "Character": "Carmilla",
+            "Expression": "Happy",
+            "Dialogue": "So? Are you gonna chicken out? We are gonna turn you into a vampire."
+        },
+        {
+            "Character": "Carmilla",
+            "Expression": "Happy",
+            "Font": "Italics",
+            "Dialogue": "Carmilla looks very happy, but in a cute way. Not scary at all actually.",
+            "Options": [
+                {
+                    "Name": "Let her turn you into a vampire"
+                },
+                {
+                    "Name": "Try to run away and get the hell out of here"
+                }
+            ]
+        }
+    ],
+    "Let her turn you into a vampire": [
+        {
+            "Character": "Carmilla",
+            "Expression": "Happy",
+            "Font": "Italics",
+            "Dialogue": "You nod, and signalise that you're all hers."
+        },
+        {
+            "Character": "Carmilla",
+            "Expression": "Happy",
+            "Dialogue": "YAY! I knew I could count on you. Let's go somewhere.. A bit more private."
+        },
+        {
+            "Font": "Italics",
+            "Dialogue": "You follow Carmilla up some stairs that leads to a small cozy room."
+        },
+        {
+            "Character": "Carmilla",
+            "Expression": "Happy",
+            "Dialogue": "Lay down please."
+        },
+        {
+            "Character": "Carmilla",
+            "Expression": "Happy",
+            "Font": "Italics",
+            "Dialogue": "You do what you're told. She takes your arm, and washes it with a towel?.."
+        },
+        {
+            "Character": "Carmilla",
+            "Expression": "Happy",
+            "Font": "Italics",
+            "Dialogue": "You watch her hold your arm between both of her hands, and you prepare yourself for IT to happen"
+        },
+        {
+            "Character": "Carmilla",
+            "Expression": "Neutral",
+            "Font": "Italics",
+            "Dialogue": "She opens her mouth wide, and bites!"
+        },
+        {
+            "Character": "Carmilla",
+            "Expression": "Neutral",
+            "Talking": "Player",
+            "Dialogue": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHHHHHHHHHH---"
+        },
+        {
+            "Character": "Carmilla",
+            "Expression": "Neutral",
+            "Font": "Italics",
+            "Dialogue": "The pain is unbearable! WHEN DOES IT STOP!?!"
+        },
+        {
+            "Character": "Carmilla",
+            "Expression": "Neutral",
+            "Font": "Italics",
+            "Dialogue": "Carmilla kept on going for what felt like hours"
+        },
+        {
+            "Character": "Carmilla",
+            "Expression": "Neutral",
+            "Font": "Italics",
+            "Dialogue": "It's getting really dark... And co.. ColD.."
+        },
+        {
+            "Character": "Carmilla",
+            "Expression": "Neutral",
+            "Font": "Italics",
+            "Dialogue": "The pain turns into plessure, it would feel so good to just let go"
+        },
+        {
+            "Character": "Carmilla",
+            "Expression": "Neutral",
+            "Font": "Italics",
+            "Dialogue": "You close your eyes, and let go."
+        }
+    ],
+    "Try to run away and get the hell out of here": [
+        {
+            "Character": "Carmilla",
+            "Expression": "Happy",
+            "Font": "Italics",
+            "Dialogue": "You notice a fire poker beside the fireplace."
+        },
+        {
+            "Character": "Carmilla",
+            "Expression": "Happy",
+            "Talking": "Player",
+            "Dialogue": "So uhmmm.. I actually have plans that i forgot about. HAha.. Can we maybe do this another day?"
+        },
+        {
+            "Character": "Carmilla",
+            "Expression": "Neutral",
+            "Dialogue": "Oh.. Well I gue-",
+            "Skip": "Yes"
+        },
+        {
+            "Character": "Carmilla",
+            "Expression": "Surprised",
+            "Font": "Italics",
+            "Dialogue": "You run towards the fireplace before Carmilla can even finish her sentence"
+        },
+        {
+            "Character": "Carmilla",
+            "Expression": "Surprised",
+            "Font": "Italics",
+            "Dialogue": "You quickly grab the fire poker and take one last look at Carmillas face. She looks frightened and betrayed."
+        },
+        {
+            "Character": "Carmilla",
+            "Expression": "Surprised",
+            "Font": "Italics",
+            "Dialogue": "But without giving it another thought, you smash the fire poker right into the side of her head."
+        },
+        {
+            "Character": "Carmilla",
+            "Expression": "Crying",
+            "Dialogue": "AAAAAAAAAAAAAARGHHHHHH!!! WHAT THE HELL!"
+        },
+        {
+            "Character": "Carmilla",
+            "Expression": "Crying",
+            "Font": "Italics",
+            "Dialogue": "Carmilla is bursting in tears and screams, while her friends are trying to comfort her. They arent even trying to attack you"
+        },
+        {
+            "Character": "Carmilla",
+            "Expression": "Crying",
+            "Font": "Italics",
+            "Dialogue": "This is fucking sick- You. Are. Not. In. Control. Anymore.",
+            "Skip": "Yes"
+        },
+        {
+            "Character": "Carmilla",
+            "Expression": "Crying",
+            "Font": "Italics",
+            "Dialogue": "Carmilla is laying on the ground like a hurt little dog.",
+            "Skip": "Yes"
+        },
+        {
+            "Character": "Carmilla",
+            "Expression": "Crying",
+            "Font": "Italics",
+            "Dialogue": "You slowly walk over to Carmilla. You raise your hands high with the poker in your hand, and pierce the thing right through her eye and head!!!",
+            "Skip": "Yes"
+        },
+        {
+            "Character": "Carmilla",
+            "Expression": "Crying",
+            "Font": "Italics",
+            "Dialogue": "The horrifying sounds of her screams fill the room completely..",
+            "Skip": "Yes"
+        },
+        {
+            "Character": "Carmilla",
+            "Expression": "Crying",
+            "Font": "Italics",
+            "Dialogue": "There's only darkness..",
+            "Skip": "Yes"
+        },
+        {
+            "Character": "Carmilla",
+            "Expression": "Crying",
+            "Font": "Italics",
+            "Dialogue": "You open your eyes and notice that you're in a completely white room. A tall man shows up in the door."
+        }
+    ],
+    "Go to your room and study": [
+        {
+            "Character": "Carmilla",
+            "Expression": "Neutral",
+            "Talking": "Player",
+            "Dialogue": "Sorry, I need to study for tommorow, so I don't fall behind you know."
+        }
+    ],
+    "Unpack your belongings": [
+        {
+            "Font": "Italics",
+            "Dialogue": "You decide to stay in your room and unpack all of your many blongings"
         }
     ]
 }

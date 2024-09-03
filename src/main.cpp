@@ -1,5 +1,4 @@
 #include "dialogue.hpp"
-#include <raylib.h>
 
 constexpr unsigned short winWidth = 1600;
 constexpr unsigned short winHeight = 900;

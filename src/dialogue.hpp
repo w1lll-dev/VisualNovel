@@ -1,78 +1,10 @@
 #ifndef DIALOGUE_HPP
 #define DIALOGUE_HPP
 
-#include <cstdint>
 #include <raylib.h>
 #include <nlohmann/json.hpp>
 
 class DialogueManager {
-private:
-    Image classImg;
-    Texture2D classTex;
-
-    Image carmillaImg;
-    Texture2D carmillaTex;
-
-    Image ivoryImg;
-    Texture2D ivoryTex;
-
-    Image kayaImg;
-    Texture2D kayaTex;
-
-    Rectangle expressionRec;
-    Vector2 charPos;
-
-    Font font;
-
-    uint8_t recMult;
-
-    uint16_t framesCounter = 0;
-
-    uint16_t diaBoxWidth;
-    uint16_t boxX;
-    uint16_t diaBoxY;
-    uint16_t nameBoxY;
-    uint16_t optionBtnX;
-    uint16_t optionBtnY;
-
-    std::string curBg;
-    std::string curChar;
-    std::string curExpr;
-    std::string curDia;
-
-    nlohmann::json dia;
-
-    // Constants
-    const uint8_t fontSize = 32;
-    const uint8_t optionFontSize = 64;
-    const uint8_t spacing = 1;
-    const uint8_t borderSize = 10;
-    const uint8_t optionBorderSize = 100;
-    const uint8_t diaBoxHeight = 200;
-    const uint8_t nameBoxWidth = 200;
-    const uint8_t nameBoxHeight = 30;
-    const uint8_t optionBtnWidth = 200;
-    const uint8_t optionBtnHeight = 100;
-    const uint16_t optionBtnsWidth = 700;
-    const Color boxCol = { 0, 0, 0, 200 };
-    const std::map<std::string, char> charMap = {
-        { "Carmilla", 0 },
-        { "Ivory", 1 },
-        { "Kaya", 2 }
-    };
-    const std::map<std::string, char> expressionMap = {
-        { "Sighing", 0 },
-        { "Sad", 1 },
-        { "Crying", 2 },
-        { "Annoyed", 3 },
-        { "Sad2", 4 },
-        { "Neutral", 5 },
-        { "Happy", 6 },
-        { "Surprised", 7 },
-        { "Angry", 8 },
-        { "Furious", 9 },
-    };
-
 public:
     DialogueManager();
     virtual ~DialogueManager();
@@ -82,8 +14,81 @@ public:
     void DrawDialogue();
     void ManageDialogue();
 
-    uint16_t curDiaIdx = 0;
-    uint16_t curSeqIdx = 0;
+    int curDiaIdx = 0;
+    std::string curSeqStr = "Intro";
+
+private:
+    std::array<Image, 8> bgImgs;
+    std::array<Texture2D, 8> bgTexs;
+
+    std::array<Image, 3> charImgs;
+    std::array<Texture2D, 3> charTexs;
+
+    int charIdx;
+
+    Rectangle expressionRec;
+    Vector2 charPos;
+
+    Font defaultFont;
+    Font italicsFont;
+    Font boldFont;
+
+    float framesCounter = 0;
+
+    int boxX;
+
+    nlohmann::json dia;
+
+    std::string curDia;
+    std::string curPlace;
+
+    int letterCount = 0;
+    char input[9] = "\0";
+    std::string name;
+
+    std::string TextWrapped(std::string text, Font& font, float& width, const int& textOffsetX);
+    int IndexOfStringInVector(const std::vector<std::string>& stringArray, std::string stringToFind);
+
+    // Constants
+    const char fontSize = 36;
+    const char spacing = 0;
+
+    const int borderSize = 10;
+    const int optionBorderSize = 200;
+    const int maxDiaBoxWidth = 800;
+    const int diaBoxHeight = 175;
+    const int nameBoxWidth = 175;
+    const int nameBoxHeight = 40;
+    const int optionBtnWidth = 300;
+    const int optionBtnHeight = 100;
+    const int optionBtnsWidth = 700;
+    const Color boxCol = { 0, 0, 0, 200 };
+    const std::vector<std::string> places = { 
+        "Lolake", 
+        "Hall", 
+        "Hall2",
+        "LongHall",
+        "Dorm", 
+        "Classroom", 
+        "Chemistry",
+        "LoveClub"
+    };
+    const std::vector<std::string> chars = { 
+        "Carmilla", 
+        "Ivory", 
+        "Kaya" 
+    };
+    const std::vector<std::string> exprs = {
+        "EyesClosed",
+        "Sad",
+        "Crying",
+        "Confused",
+        "Disappointed",
+        "Neutral",
+        "Happy",
+        "Surprised",
+        "Angry"
+    };
 };
 
 #endif
